@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input-dracula {
+    @apply w-full bg-[#282a36] border border-[#6272a4] rounded-lg px-4 py-2 text-[#f8f8f2] focus:outline-none focus:border-[#bd93f9] focus:ring-1 focus:ring-[#bd93f9] transition-colors;
+  }
+  .btn-primary {
+    @apply bg-[#bd93f9] hover:bg-[#ff79c6] text-[#282a36] font-semibold py-2 px-4 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-secondary {
+    @apply bg-[#44475a] hover:bg-[#6272a4] text-[#f8f8f2] font-semibold py-2 px-4 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .card-dracula {
+    @apply bg-[#44475a] rounded-xl p-6 border border-[#6272a4] shadow-lg;
+  }
+}
